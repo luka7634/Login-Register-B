@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="../styles/sign-up.css">
+</head>
+<body>
+    <div class="reg-container">
+        <div class="reg-header">
+            <h1>Registrarse</h1>
+            <p>Por favor introduzca sus datos para registrarse</p>
+        </div>
+        <form class="reg-form" accept-charset="utf-8">
+            <div class="form-group">
+                <label for="name">Nombre y Apellidos</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre y sus apellidos" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Nombre de usuario</label>
+                <input type="text" name="username" id="username" placeholder="Ingrese su nombre de usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="mail">Correo electrónico</label>
+                <input type="email" name="mail" id="mail" placeholder="Ingrese su correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required </input>
+            </div>
+        </form>
+        <button type="submit" class="reg-button">Registrarte</button>
+        <div class="reg-footer">
+            <p>¿Ya tienes una cuenta? <a href="../index.html">Inicia Sesión</a></p>
+        </div>
+    </div>
+</body>
+</html>

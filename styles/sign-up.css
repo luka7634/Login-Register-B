@@ -1,0 +1,147 @@
+* {
+    font-family: Courier, "Courier New", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../Images/stars.png") repeat;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    height: 100vh;
+    background-size: 230px 230px;
+    background-attachment: fixed;
+}
+
+.reg-container {
+    background-color: rgba(154, 141, 255, 0.3);
+    backdrop-filter: blur(1.5px);
+    border-radius: 20px;
+    padding: 30px;
+    /*width: 100%;*/
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.reg-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.reg-header h1 {
+    color: white;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 37px;
+}
+
+.reg-header p {
+    color: white;
+    font-size: 14px;
+}
+
+.reg-form .form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    color: white;
+    margin-left: 0.3rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 0.8rem;
+    transition: border 0.3s;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.form-group input::placeholder {
+    color: white;
+}
+
+.form-group input:focus {
+    border-color: #004CFF;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(15, 51, 255, 0.2);
+}
+
+input:valid {
+  border-color: #004CFF;
+}
+
+input:invalid {
+  border-color: #e74c3c;
+}
+
+input:focus:invalid {
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+}
+
+.reg-button {
+    width: 100%;
+    background-color: #004CFF;
+    padding: 13px;
+    border: none;
+    color: white;
+    font-weight: 553;
+    font-size: 15px;
+    border-radius: 25px;
+    margin-top: 7px;
+    transition: all 0.3s ease;
+}
+
+.reg-button:hover {
+    transform: translateY(-3px)
+}
+
+.reg-footer {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.reg-footer a {
+    color: white;
+    text-decoration: none;
+    background-color: #00d9ff4c;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.reg-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 360px) {
+    body {
+        padding: 10px;
+    }
+
+    .reg-container {
+        padding:20px
+    }
+
+    .reg-header {
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,195 @@
+* {
+    /*margin: 0px;
+    padding: 0px;*/
+    box-sizing: border-box;
+    font-family: Courier, "Courier New", sans-serif;
+}
+
+body {
+    background: url("../Images/stars.png") repeat;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    height: 100vh;
+    background-size: 230px 230px;
+    background-attachment: fixed;
+}
+
+.login-container {
+    background: rgba(154, 141, 255, 0.3);
+    backdrop-filter: blur(1.5px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.login-header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+    display: block;
+}
+
+.login-header p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.login-form .form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-group label {
+    color: white;
+    margin-left: 0.3rem;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 23px;
+    font-size: 0.8rem;
+    transition: border 0.3s;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.form-group input::placeholder {
+    color: white;
+}
+
+.form-group input:focus {
+    border-color: #004CFF;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(15, 51, 255, 0.2);
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.form-options label {
+    display: flex;
+    align-items: center;
+    color: #333;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.form-options input {
+    width: auto;
+    margin-right: 5px;
+    color: #fff
+}
+
+.form-options a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+.form-group a:active {
+    color: #cacaca;
+}
+
+.form-group a:visited {
+    color: #cacaca;
+}
+
+.form-options input[type="checkbox"] {
+    transform: scale(1);
+}
+
+.form-options .remember-me {
+    color: #fff;
+}
+
+input:valid {
+  border-color: #004CFF;
+}
+
+input:invalid {
+  border-color: #e74c3c;
+}
+
+input:focus:invalid {
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+}
+
+.login-button {
+    width: 100%;
+    background-color: #004CFF;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-weight: 553;
+    font-size: 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-3px);
+}
+
+.login-footer {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.login-footer a {
+    color: white;
+    text-decoration: none;
+    background-color: #00d9ff4c;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (width: 360px) {
+    body {
+        padding: 10px;
+    }
+
+    .login-container {
+        padding:20px
+    }
+
+    .login-header {
+        margin-bottom: 2rem;
+    }
+}
