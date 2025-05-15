@@ -132,7 +132,7 @@ input:focus:invalid {
     text-decoration: underline;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
     body {
         padding: 10px;
     }
@@ -144,4 +144,11 @@ input:focus:invalid {
     .reg-header {
         margin-bottom: 2rem;
     }
+
+    .reg-footer {
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+}
 }
