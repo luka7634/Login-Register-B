@@ -62,7 +62,7 @@
 
 ## 🔗 **Demo en vivo**  
 
-📌 [Ver Demo en GitHub Pages](https://luka7634.github.io/Login-Register-A/index.html)  
+📌 [Ver Demo en GitHub Pages](https://luka7634.github.io/Login-Register-B/)
 
 ---
 
